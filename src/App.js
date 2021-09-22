@@ -1,11 +1,32 @@
-import './App.css';
+import styles from "./scss/bemit.module.scss";
 import { Navbar } from './components/navbar/Navbar';
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
+import Home from "./components/home/Home";
+import Popular from "./components/popular/Popular";
+import TopRated from "./components/topRated/TopRated";
+import {Upcoming} from "./components/upcoming/Upcoming";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <Router>
+      <div className={styles.container}>
       <Navbar />
-    </div>
+      <Switch>
+        <Route path="/" component={Home} exact>
+          <Home />
+        </Route>
+        <Route path="/popular" component={Popular}>
+          <Popular />
+        </Route>
+        <Route path="/rated">
+          <TopRated />
+        </Route>
+        <Route path="/upcoming">
+          <Upcoming />
+        </Route>
+      </Switch>
+      </div>
+    </Router>
   );
 }
 

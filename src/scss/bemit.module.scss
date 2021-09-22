@@ -1,4 +1,7 @@
 // settings :  variables, fuentes, colores, columnas grid, etc.
+@import './settings/variables.module';
+
+
 // tools : mixins, functions
 
 // ---------------- CSS OUTPUT START HERE
@@ -6,11 +9,15 @@
 // external -- para maquetar todo aquello ajeno al HTML. por ejemplo,
             // cuando se añade una libreria externa y se quiere modificar sus estilos
 
-            // generic : estilos generales como por ejemplo las variables de css, estilos para los
+// generic : estilos generales como por ejemplo las variables de css, estilos para los
 //           selectores * y :selection
+
+@import './components/component.module';
 
 // tags : esta capa se utiliza para dar estilos a los tags por ejemplo
 //        div, img, p. etc.
+
+@import './tags/tags.module';
 
 // keyframes : para recoger todos los keyframes que necesitemos
 
