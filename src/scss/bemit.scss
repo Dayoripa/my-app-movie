@@ -1,0 +1,29 @@
+// settings :  variables, fuentes, colores, columnas grid, etc.
+// tools : mixins, functions
+
+// ---------------- CSS OUTPUT START HERE
+
+// external -- para maquetar todo aquello ajeno al HTML. por ejemplo,
+            // cuando se añade una libreria externa y se quiere modificar sus estilos
+
+            // generic : estilos generales como por ejemplo las variables de css, estilos para los
+//           selectores * y :selection
+
+// tags : esta capa se utiliza para dar estilos a los tags por ejemplo
+//        div, img, p. etc.
+
+// keyframes : para recoger todos los keyframes que necesitemos
+
+// objects : encargada de las clases de tipo objeto, son clases de caracter
+//          universales, que pueden ser utilizadas en diferentes componentes.
+//          por ejemplo las clases que empiezan por O, .o-col-4@xs{}
+
+// blocks : una entidad con significado propio que se repite en todos las paginas.
+//          por ejepmlo el Header.
+
+// component : es la responsable de todos de los estilos del compnentes
+
+
+// scopes : gerar estilos de ambito
+
+// utilities : estilos especificos
